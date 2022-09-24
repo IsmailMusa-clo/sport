@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="form-main-container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <span class="form-title">
+                        <strong> حساب جديد </strong>
+                    </span>
+                </div>
+
+                <form class="form-content">
+                    <div class="input-wrapper">
+                        <input class="input-style" type="text" name="username" placeholder="اسم المستخدم" required>
+                        <span class="input-style-focus"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <input class="input-style" type="text" name="phone" placeholder="رقم الهاتف" required>
+                        <span class="input-style-focus"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>اختر الرياضة</option>
+                            <option value="1">كرة القدم</option>
+                            <option value="2">كرة السلة</option>
+                            <option value="3">السباحة</option>
+                            <option value="4">تنس أرضي</option>
+                            <option value="5">بلياردو</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div class="input-group">
+                            <input class="form-control" type="password" placeholder="كلمة المرور" id="password"
+                                required>
+                            <span class="form-control-focus"></span>
+                            <div class="input-group-addon" onclick="passwordVisibility();">
+                                <i class="fa fa-eye" id="showPass"></i>
+                                <i class="fa fa-eye-slash d-none" id="hidePass"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="button-style w-100">
+                        تسجيل
+                    </button>
+                    <p class="txt-style1 mt-5">لديك حساب بالفعل؟ <a class="txt-style2" href="customLogin.html"><strong>
+                                تسجيل دخول</strong></a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
